@@ -102,3 +102,75 @@
     font-size: 12px;
   }
 }
+
+/* ====== TicTacToe Arena Custom Styles ====== */
+.ttt-main-layout {
+  display: flex; align-items: flex-start; min-height: 92vh;
+}
+.ttt-leaderboard {
+  min-width: 220px; background: var(--bg-secondary);
+  padding: 18px 10px; border-right: 1.5px solid var(--border-color);
+  min-height: 500px;
+}
+.ttt-leaderboard h2 { font-weight: bold; }
+.ttt-leaderboard ol { padding-left: 1.2em; }
+.ttt-leaderboard li { display: flex; align-items: center; justify-content: space-between; margin-bottom: 7px; }
+.ttt-leaderboard .rank { min-width: 20px; color: var(--accent, #F9A825);}
+.ttt-leaderboard .username { font-weight: 600; margin-left: 3px;}
+.ttt-leaderboard .score { color: var(--text-secondary); font-size: 0.93em; margin-left: 10px;}
+
+.ttt-main { flex: 1; padding: 34px 24px 40px 24px; }
+
+.ttt-logo {
+  letter-spacing: 1px;
+}
+.ttt-nav-links button, .logout {
+  margin-right: 8px;
+}
+
+.ttt-board {
+  display: inline-block; margin: 1.5rem 0;
+}
+.ttt-board-row { display: flex; }
+.ttt-cell {
+  width:72px; height:72px; font-size:2.3rem; border:1.5px solid var(--border-color);
+  background: var(--bg-primary); color: var(--text-primary); border-radius:7px; margin:2px;
+  display:flex; align-items: center; justify-content: center; font-weight: 600;
+  transition: background .2s;
+}
+.ttt-cell-active {
+  background: var(--accent, #F9A825);
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(33,33,33,0.08);
+}
+.ttt-status { margin-top:1.7rem; font-size: 1.5rem; font-weight:600;}
+.ttt-game-meta { font-size: 1.07em; margin-top: 12px;}
+.ttt-game-meta button { margin-left: 20px; }
+
+/* Modal */
+.ttt-modal-backdrop {position: fixed;top:0;left:0;right:0;bottom:0;background:rgba(30,30,30,0.45);display:flex;align-items:center;justify-content:center;z-index:100;}
+.ttt-modal {background:var(--bg-primary);padding:32px 36px; border-radius:15px; box-shadow: 0 3px 12px rgba(0,0,0,.09);position:relative;}
+.modal-close {position:absolute;top:10px;right:12px;font-size:2rem;border:none;background:none;cursor:pointer;}
+
+/* Auth/Lobby */
+.ttt-auth-container {margin:auto; width:100vw; height:80vh; display:flex; align-items:center; justify-content:center;}
+.ttt-auth-box {padding:44px 48px; background:var(--bg-secondary); border-radius:12px;}
+.err-msg, .auth-err { margin-top:10px; color:#E87A41;}
+.btn {background: var(--button-bg,#1E88E5); color: var(--button-text); font-weight:600; padding:10px 18px; border-radius:7px;border:none;margin:3px 0;font-size:1.06rem; cursor:pointer;}
+.btn.primary { background:var(--button-bg, #1E88E5);}
+.btn.secondary { background:var(--accent,#F9A825); color:var(--text-primary);}
+.txt-btn, .link-btn { border:none;background:none;color:var(--text-secondary);cursor:pointer;padding:0 3px;font-size:1rem;margin:0 5px;}
+.logout { background:var(--accent,#F9A825);color:var(--text-primary); }
+
+.ttt-history-list {list-style:none;padding:0;}
+.ttt-history-list li { display: flex; align-items: center; gap:16px; margin-bottom:8px;}
+.ttt-history-list span { min-width: 60px; }
+.ttt-history-list button { font-size: 0.97em; padding:4px 11px; }
+
+@media (max-width: 1020px) {
+  .ttt-main-layout { flex-direction:column; }
+  .ttt-leaderboard { border-right:none; border-bottom: 1.5px solid var(--border-color);}
+}
+@media (max-width: 700px) {
+  .ttt-board .ttt-cell { width: 48px; height: 48px; font-size: 1.5rem;}
+}
