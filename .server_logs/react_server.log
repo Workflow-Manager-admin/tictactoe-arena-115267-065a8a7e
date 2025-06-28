@@ -6,48 +6,11 @@ Attempting to bind to HOST environment variable: 0.0.0.0
 If this was unintentional, check that you haven't mistakenly set it in your shell.
 Learn more here: https://cra.link/advanced-config
 
-(node:1963) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(node:5865) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
 (Use `node --trace-deprecation ...` to show where the warning was created)
-(node:1963) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(node:5865) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
 Starting the development server...
 
-Compiled successfully!
-
-You can now view react-kavia in the browser.
-
-  Local:            http://localhost:3000
-  On Your Network:  http://172.17.0.2:3000
-
-Note that the development build is not optimized.
-To create a production build, use npm run build.
-
-webpack compiled successfully
-Compiling...
-Compiled with warnings.
-
-[eslint] 
-src/App.js
-  Line 50:27:  'setShowLeaderboard' is assigned a value but never used                                                              no-unused-vars
-  Line 54:10:  'showModal' is assigned a value but never used                                                                       no-unused-vars
-  Line 54:21:  'setShowModal' is assigned a value but never used                                                                    no-unused-vars
-  Line 55:10:  'modalContent' is assigned a value but never used                                                                    no-unused-vars
-  Line 55:24:  'setModalContent' is assigned a value but never used                                                                 no-unused-vars
-  Line 77:6:   React Hook useEffect has a missing dependency: 'fetchLeaderboard'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
-
-Search for the keywords to learn more about each warning.
-To ignore, add // eslint-disable-next-line to the line before.
-
-WARNING in [eslint] 
-src/App.js
-  Line 50:27:  'setShowLeaderboard' is assigned a value but never used                                                              no-unused-vars
-  Line 54:10:  'showModal' is assigned a value but never used                                                                       no-unused-vars
-  Line 54:21:  'setShowModal' is assigned a value but never used                                                                    no-unused-vars
-  Line 55:10:  'modalContent' is assigned a value but never used                                                                    no-unused-vars
-  Line 55:24:  'setModalContent' is assigned a value but never used                                                                 no-unused-vars
-  Line 77:6:   React Hook useEffect has a missing dependency: 'fetchLeaderboard'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
-
-webpack compiled with 1 warning
-Compiling...
 Compiled with warnings.
 
 [eslint] 
